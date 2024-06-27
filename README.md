@@ -172,8 +172,9 @@ Somos un equipo de desarrolladores apasionados por la creación de soluciones in
 - **Nuestro Compromiso**
   Estamos comprometidos con la excelencia técnica y la mejora continua. Creemos en compartir nuestro conocimiento a través de código abierto y contribuciones a la comunidad, fortaleciendo así el ecosistema de desarrollo de software global.
 
-- **Contacto**
-  Estamos abiertos a colaboraciones, oportunidades de desarrollo conjunto y discusiones sobre innovación tecnológica. No dudes en contactarnos para explorar cómo podemos trabajar juntos en tu próximo proyecto.
+## **Contacto**
+
+Estamos abiertos a colaboraciones, oportunidades de desarrollo conjunto y discusiones sobre innovación tecnológica. No dudes en contactarnos para explorar cómo podemos trabajar juntos en tu próximo proyecto.
 
 - **_Marcelo Robin:_**
 
