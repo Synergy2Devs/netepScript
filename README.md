@@ -29,11 +29,11 @@ bash netepScript.v0-8-9.sh
 
 En este proyecto se han configurado varios scripts en el archivo package.json para facilitar el desarrollo y la producción:
 
-npm run dev # Inicia el servidor en modo de desarrollo utilizando ts-node-dev.
-npm run build # Compila el código TypeScript en JavaScript.
-npm start # Inicia el servidor utilizando el código compilado.
-npm run lint # Ejecuta ESLint para verificar la calidad del código.
-npm run format# Ejecuta Prettier para formatear el código.
+- _npm run dev # Inicia el servidor en modo de desarrollo utilizando ts-node-dev._
+- _npm run build # Compila el código TypeScript en JavaScript._
+- _npm start # Inicia el servidor utilizando el código compilado._
+- _npm run lint # Ejecuta ESLint para verificar la calidad del código._
+- _npm run format# Ejecuta Prettier para formatear el código._
 
 ## **Estructura del Proyecto** 🏗️
 
