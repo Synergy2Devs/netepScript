@@ -15,19 +15,32 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 <a name="requisitos-previos"></a>
 ## **Requisitos previos** ⚙️
 
-- Un ordenador con Windows o Linux
-- Un editor de texto (opcional)
+- Un ordenador con Windows o Linux o una Mac con MacOS
 - Git Bash o Windows Subsystem for Linux (WSL) (solo para Windows)
-- Permisos de administrador (opcional, para ejecutar el script con sudo)
+- Un editor de código, preferentemente utilizar Visual Studio Code
+- Permisos de administrador (opcional, para ejecutar el script con sudo para Linux)
 
 <a name="instalacion"></a>
 ## **Instalación** ⚙️
 
-Para empezar con este proyecto, descarga el archivo, descomprímelo dentro de una nueva carpeta y abre la carpeta con tu editor de texto de preferencia o la terminal nativa de tu sistema operativo.
+Para utilizar netepScript, primero crea una carpeta vacía donde alojarás tu proyecto. Descarga el archivo comprimido y descomprímelo dentro de esa carpeta. A continuación, abre la carpeta con tu editor de texto preferido o accede a ella desde la terminal de tu sistema operativo.
 
-- Descargar y descomprimir el archivo
+**En windows**
 
-- Abrir la carpeta en tu terminal o editor
+- Lo ideal es utilizar una terminal de bash, como la que se encuentra disponible dentro de Visual Studio Code. 
+
+- Accede a una nueva terminal de bash, y asegúrate de estar en la carpeta donde has descomprimido netepScript.
+
+- Luego vamos a convertir el script en ejecutable escribiendo en la consola:
+
+```bash
+chmod +x netepScript.v0-8-9.sh
+```
+- Luego estamos en condiciones de ejecutar el script para que se inicie el proceso de instalación:
+
+```bash
+./netepScript.v0-8-9.sh
+```
 
 Luego ejecuta el script.
 
@@ -91,6 +104,7 @@ En este proyecto se han configurado varios scripts en el archivo package.json pa
 - tsconfig.json: Configuración de TypeScript.
 - .gitignore: Archivo de configuración de gitignore.
 
+<a name="configuracion"></a>
 ## **Configuración** 🔧
 
 A continuación se describen las configuraciones más importantes del proyecto.
@@ -167,11 +181,12 @@ El archivo .prettierrc contiene la configuración de Prettier. Aquí tienes un e
   "exec": "ts-node src/index.ts"
 }
 ```
-
+<a name="contribuciones"></a>
 ## **Contribuciones** 💡
 
 Las contribuciones son bienvenidas. Si tienes alguna sugerencia o mejora, abre un issue o un pull request para discutir cualquier cambio que te gustaría hacer.
 
+<a name="sobre-nosotros"></a>
 ## **Sobre Nosotros** 🌍
 
 Somos un equipo de desarrolladores apasionados por la creación de soluciones innovadoras y robustas en el ámbito de la programación. Nos especializamos en el desarrollo de aplicaciones escalables y eficientes utilizando tecnologías modernas y buenas prácticas de ingeniería de software.
@@ -185,6 +200,7 @@ Somos un equipo de desarrolladores apasionados por la creación de soluciones in
 - **Nuestro Compromiso**
   Estamos comprometidos con la excelencia técnica y la mejora continua. Creemos en compartir nuestro conocimiento a través de código abierto y contribuciones a la comunidad, fortaleciendo así el ecosistema de desarrollo de software global.
 
+<a name="contacto"></a>
 ## **Contacto** 📬
 
 Estamos abiertos a colaboraciones, oportunidades de desarrollo conjunto y discusiones sobre innovación tecnológica. No dudes en contactarnos para explorar cómo podemos trabajar juntos en tu próximo proyecto.
