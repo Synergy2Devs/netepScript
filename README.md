@@ -178,7 +178,7 @@ Estamos abiertos a colaboraciones, oportunidades de desarrollo conjunto y discus
 
 - **_Marcelo Robin:_**
 
-* [GitHub](https://github.com/mnibor){:target="\_blank"}
+* <a href="https://github.com/mnibor" target="_blank">GitHub</a>
 * [Linkedin](https://www.linkedin.com/in/marcelo-a-robin-3605b1286/){:target="\_blank"}
 
 - **_Jesus García:_**
