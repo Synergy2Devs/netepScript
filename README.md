@@ -15,15 +15,15 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 
 Para empezar con este proyecto, descarga el archivo, descomprímelo dentro de una nueva carpeta y abre la carpeta con tu editor de texto de preferencia o la terminal nativa de tu sistema operativo.
 
-```bash
-# Descargar y descomprimir el archivo
+- Descargar y descomprimir el archivo
 
-# Abrir la carpeta en tu terminal o editor
-```
+- Abrir la carpeta en tu terminal o editor
 
 Luego ejecuta el script.
 
-<!-- comando para ejecutar -->
+```bash
+bash netepScript.v0-8-9.sh
+```
 
 ## **Scripts**
 
@@ -39,27 +39,45 @@ npm run format# Ejecuta Prettier para formatear el código.
 
 - La estructura del proyecto es la siguiente:
 
+```ts
 .
 ├── src
+│ ├── config
 │ ├── controllers
+│ ├── interfaces
 │ ├── middlewares
+│ ├── models
 │ ├── routes
-│ ├── services
-│ ├── utils
-│ └── index.ts
+│ ├── servicese
+│ ├── index.ts
+│ └── server.ts
 ├── .eslintrc.json
 ├── .prettierrc
+├── .nodemon.json
 ├── package.json
+├── package-lock.json
 ├── tsconfig.json
+├── .gitignore
 └── README.md
+```
 
 - src: Carpeta principal del código fuente.
+- config:
 - controllers: Controladores para manejar las solicitudes HTTP.
+- interfaces: Interfaces TypeScript.
 - middlewares: Middlewares personalizados.
+- models: Modelos de datos.
 - routes: Definiciones de rutas.
 - services: Servicios de la aplicación.
-- utils: Funciones y utilidades.
 - index.ts: Archivo de entrada principal.
+- server.ts: Archivo de configuración del servidor
+- .eslintrc.json: Configuración de Elisnt.
+- .prettierrc: Configuración de Prettier.
+- .nodemon.json: Configuración de Nodemon.
+- package.json: Archivo de configuración de npm.
+- package-lock.json: Archivo de bloqueo de versiones de npm.
+- tsconfig.json: Configuración de TypeScript.
+- .gitignore: Archivo de configuracion de gitignore.
 
 ## **Configuración**
 
@@ -72,13 +90,15 @@ El archivo tsconfig.json contiene la configuración de TypeScript. Aquí tienes 
 ```json
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "es2016",
     "module": "commonjs",
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true
-  }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
 ```
 
@@ -86,25 +106,25 @@ El archivo tsconfig.json contiene la configuración de TypeScript. Aquí tienes 
 
 El archivo .eslintrc.json contiene la configuración de ESLint. Aquí tienes un ejemplo de configuración básica:
 
-```json
-{
-  "env": {
-    "node": true,
-    "es6": true
-  },
-  "extends": [
+```ts
+module.exports = {
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint", "prettier"],
+  extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "plugin:prettier/recommended",
   ],
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
-  "rules": {
-    "indent": ["error", 2],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"]
-  }
-}
+  parserOptions: {
+    ecmaVersion: "latest",
+  },
+  env: {
+    es6: true,
+  },
+  rules: {
+    "prettier/prettier": "error",
+  },
+};
 ```
 
 - _Prettier_
@@ -115,8 +135,23 @@ El archivo .prettierrc contiene la configuración de Prettier. Aquí tienes un e
 {
   "singleQuote": true,
   "trailingComma": "all",
-  "printWidth": 80,
-  "tabWidth": 2
+  "semi": true,
+  "tabWidth": 2,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "lf"
+}
+```
+
+- _Nodemon_
+  El archivo nodemon.json contiene la configuracion de Nodemon. Aquí tienes un ejemplo de configuración básica:
+
+```json
+{
+  "watch": ["src"],
+  "ext": "ts,json",
+  "ignore": ["src/tests/*", "node_modules"],
+  "exec": "ts-node src/index.ts"
 }
 ```
 
