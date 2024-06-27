@@ -69,7 +69,7 @@ A continuación se describen las configuraciones más importantes del proyecto.
 
 El archivo tsconfig.json contiene la configuración de TypeScript. Aquí tienes un ejemplo de configuración básica:
 
-```
+```json
 {
   "compilerOptions": {
     "target": "ES6",
@@ -86,7 +86,7 @@ El archivo tsconfig.json contiene la configuración de TypeScript. Aquí tienes 
 
 El archivo .eslintrc.json contiene la configuración de ESLint. Aquí tienes un ejemplo de configuración básica:
 
-```
+```json
 {
   "env": {
     "node": true,
@@ -111,7 +111,7 @@ El archivo .eslintrc.json contiene la configuración de ESLint. Aquí tienes un 
 
 El archivo .prettierrc contiene la configuración de Prettier. Aquí tienes un ejemplo de configuración básica:
 
-```
+```json
 {
   "singleQuote": true,
   "trailingComma": "all",
