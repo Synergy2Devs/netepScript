@@ -210,16 +210,17 @@ Somos un equipo de desarrolladores apasionados por la creación de soluciones in
 <a name="contacto"></a>
 ## **Contacto** 📬
 
-Estamos dispuestos a recibir colaboraciones, oportunidades de desarrollo conjunto y discusiones sobre innovación tecnológica. No dudes en contactarnos para explorar cómo podemos trabajar juntos en tu próximo proyecto.
+Estamos listos para escuchar tus ideas y explorar cómo podemos trabajar juntos para llevarlas al siguiente nivel. ¡Contáctanos hoy y comencemos a construir el futuro!
+
 
 - **Synergy2Devs**
   - <a href="mailto:synergy2devs@gmail.com">Escríbenos un email 📧</a>
-  - [Nuestro GitHub](https://github.com/Synergy2Devs){:target="_blank"}
+  - [Nuestro GitHub](https://github.com/Synergy2Devs)
 
 - **Marcelo Robin**
-  - [GitHub](https://github.com/mnibor){:target="_blank"}
-  - [Linkedin](https://www.linkedin.com/in/marcelo-a-robin-3605b1286/){:target="_blank"}
+  - [GitHub](https://github.com/mnibor)
+  - [Linkedin](https://www.linkedin.com/in/marcelo-a-robin-3605b1286/)
 
 - **Jesus Garcia**
-  - [GitHub](https://github.com/JAJesusGarcia){:target="_blank"}
-  - [Linkedin](https://www.linkedin.com/in/jesusjagarcia/){:target="_blank"}
+  - [GitHub](https://github.com/JAJesusGarcia)
+  - [Linkedin](https://www.linkedin.com/in/jesusjagarcia/)
