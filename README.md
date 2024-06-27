@@ -159,16 +159,28 @@ El archivo .prettierrc contiene la configuración de Prettier. Aquí tienes un e
 
 Las contribuciones son bienvenidas. Si tienes alguna sugerencia o mejora, abre un issue o un pull request para discutir cualquier cambio que te gustaría hacer.
 
-- Marcelo Robin:
+## **Sobre Nosotros**
 
-* GitHub: marcelo-robin
-* LinkedIn: Marcelo Robin
+Somos un equipo de desarrolladores apasionados por la creación de soluciones innovadoras y robustas en el ámbito de la programación. Nos especializamos en el desarrollo de aplicaciones escalables y eficientes utilizando tecnologías modernas y buenas prácticas de ingeniería de software.
 
-- Jesus García:
+- **Nuestra Misión**
+  Nuestra misión es impulsar el desarrollo de software de calidad, abordando desafíos técnicos con creatividad y compromiso. Buscamos no solo resolver problemas, sino también inspirar y colaborar con otros desarrolladores para construir un futuro digital más avanzado y accesible.
 
-* GitHub: JAJesusGarcia
-* LinkedIn: Jesus García
+- **Experiencia y Colaboración**
+  Con una trayectoria combinada en proyectos diversos, desde aplicaciones web hasta soluciones empresariales, hemos adquirido experiencia en el diseño de arquitecturas sólidas y en la implementación de soluciones eficaces que cumplen con las necesidades del cliente.
 
-Sobre Nosotros
+- **Nuestro Compromiso**
+  Estamos comprometidos con la excelencia técnica y la mejora continua. Creemos en compartir nuestro conocimiento a través de código abierto y contribuciones a la comunidad, fortaleciendo así el ecosistema de desarrollo de software global.
 
-Somos dos amigos apasionados por la programación y hemos creado esta cuenta de GitHub para desarrollar proyectos juntos y compartir nuestras herramientas con la comunidad.
+- **Contacto**
+  Estamos abiertos a colaboraciones, oportunidades de desarrollo conjunto y discusiones sobre innovación tecnológica. No dudes en contactarnos para explorar cómo podemos trabajar juntos en tu próximo proyecto.
+
+- **_Marcelo Robin:_**
+
+* [GitHub](https://github.com/mnibor)
+* [Linkedin](https://www.linkedin.com/in/marcelo-a-robin-3605b1286/)
+
+- **_Jesus García:_**
+
+* [GitHub](https://github.com/JAJesusGarcia)
+* [linkedin](https://www.linkedin.com/in/jesusjagarcia/)
