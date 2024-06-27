@@ -181,14 +181,14 @@ Estamos abiertos a colaboraciones, oportunidades de desarrollo conjunto y discus
 
 - **_Synergy2Devs_**
 
-  - synergy2devs@gmail.com
+- Email: [synergy2devs@gmail.com](mailto:synergy2devs@gmail.com)
 
 - **_Marcelo Robin:_**
 
-* <a href="https://github.com/mnibor" target="_blank">GitHub</a>
-* <a href="https://www.linkedin.com/in/marcelo-a-robin-3605b1286/" target="_blank">LinkedIn</a>
+- <a href="https://github.com/mnibor" target="_blank">GitHub</a>
+- <a href="https://www.linkedin.com/in/marcelo-a-robin-3605b1286/" target="_blank">LinkedIn</a>
 
 - **_Jesus García:_**
 
-* <a href="https://github.com/JAJesusGarcia" target="_blank">GitHub</a>
-* <a href="https://www.linkedin.com/in/jesusjagarcia/" target="_blank">LinkedIn</a>
+- <a href="https://github.com/JAJesusGarcia" target="_blank">GitHub</a>
+- <a href="https://www.linkedin.com/in/jesusjagarcia/" target="_blank">LinkedIn</a>
