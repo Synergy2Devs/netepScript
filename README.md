@@ -4,7 +4,7 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 
 ## **Contenido** 📚
 
-- [Requisitos Previos](#requisitos-previos) ⚙️
+- [Requisitos Previos](#requisitos-previos) 🖥️
 - [Instalación](#instalacion) ⚙️
 - [Scripts](#scripts) 📜
 - [Estructura del Proyecto](#estructura-del-proyecto) 🏗️
@@ -13,9 +13,9 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 - [Contacto](#contacto) 📬
 
 <a name="requisitos-previos"></a>
-## **Requisitos previos** ⚙️
+## **Requisitos previos** 🖥️
 
-- Un ordenador con Windows o Linux o una Mac con MacOS
+- Un ordenador con Windows 🪟 o Linux 🐧 o una Mac con MacOS 🍎
 - Git Bash o Windows Subsystem for Linux (WSL) (solo para Windows)
 - Un editor de código, preferentemente utilizar Visual Studio Code
 - Permisos de administrador (opcional, para ejecutar el script con sudo para Linux)
@@ -25,9 +25,9 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 
 Para utilizar netepScript, primero crea una carpeta vacía donde alojarás tu proyecto. Descarga el archivo comprimido y descomprímelo dentro de esa carpeta. A continuación, abre la carpeta con tu editor de texto preferido o accede a ella desde la terminal de tu sistema operativo.
 
-**En windows**
+**En Windows 🪟**
 
-- Lo ideal es utilizar una terminal de bash, como la que se encuentra disponible dentro de Visual Studio Code. 
+- Lo ideal es utilizar una terminal de bash, como la que se encuentra disponible dentro de Visual Studio Code.
 
 - Accede a una nueva terminal de bash, y asegúrate de estar en la carpeta donde has descomprimido netepScript.
 
@@ -41,14 +41,20 @@ chmod +x netepScript.v0-8-9.sh
 ```bash
 ./netepScript.v0-8-9.sh
 ```
+**En Linux 🐧 o MacOS 🍎**
 
-Luego ejecuta el script.
+- Puedes acceder desde Visual Studio Code o directamente desde la terminal de Linux en la carpeta donde has descomprimido netepScript.
+
+- Luego vamos a convertir el script en ejecutable escribiendo en la consola:
 
 ```bash
-bash netepScript.v0-8-9.sh
+chmod +x netepScript.v0-8-9.sh
 ```
+- Luego estamos en condiciones de ejecutar el script para que se inicie el proceso de instalación:
 
-ejemplo desde terminal de MacOs.
+```bash
+./netepScript.v0-8-9.sh
+```
 
 **Scripts** 📜
 
