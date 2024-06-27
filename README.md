@@ -25,6 +25,8 @@ Luego ejecuta el script.
 bash netepScript.v0-8-9.sh
 ```
 
+ejemplo desde terminal de MacOs.
+
 ## **Scripts** 📜
 
 En este proyecto se han configurado varios scripts en el archivo package.json para facilitar el desarrollo y la producción:
