@@ -226,4 +226,4 @@ Estamos listos para escuchar tus ideas y explorar cómo podemos trabajar juntos 
   - [GitHub](https://github.com/JAJesusGarcia)
   - [Linkedin](https://www.linkedin.com/in/jesusjagarcia/)
 
-** [Ir arriba de todo ↑](#inicio) **
+[Ir arriba de todo ↑](#inicio)
