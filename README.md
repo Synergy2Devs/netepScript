@@ -1,3 +1,4 @@
+
 # **netepScript**
 
 Este script instala Node, Express, TypeScript, ESLint y Prettier automáticamente. La idea de este script es ejecutar todas las instalaciones de dependencias y configuraciones de entorno con un solo comando, agilizando el inicio de proyectos desde cero.
@@ -133,3 +134,4 @@ Las contribuciones son bienvenidas. Si tienes alguna sugerencia o mejora, abre u
 Sobre Nosotros
 
 Somos dos amigos apasionados por la programación y hemos creado esta cuenta de GitHub para desarrollar proyectos juntos y compartir nuestras herramientas con la comunidad.
+
