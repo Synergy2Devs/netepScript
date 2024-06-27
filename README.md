@@ -178,10 +178,10 @@ Estamos abiertos a colaboraciones, oportunidades de desarrollo conjunto y discus
 
 - **_Marcelo Robin:_**
 
-* [GitHub](https://github.com/mnibor)
-* [Linkedin](https://www.linkedin.com/in/marcelo-a-robin-3605b1286/)
+* [GitHub](https://github.com/mnibor){:target="\_blank"}
+* [Linkedin](https://www.linkedin.com/in/marcelo-a-robin-3605b1286/){:target="\_blank"}
 
 - **_Jesus García:_**
 
-* [GitHub](https://github.com/JAJesusGarcia)
-* [linkedin](https://www.linkedin.com/in/jesusjagarcia/)
+* [GitHub](https://github.com/JAJesusGarcia){:target="\_blank"}
+* [linkedin](https://www.linkedin.com/in/jesusjagarcia/){:target="\_blank"}
