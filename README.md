@@ -4,12 +4,12 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 
 ## **Contenido**
 
-- [Instalación](#instalación)
-- [Scripts](#scripts)
-- [Estructura del Proyecto](#estructura-del-proyecto)
-- [Configuración](#configuración)
-- [Contribuciones](#contribuciones)
-- [Contacto](#contacto)
+- [Instalación](##instalación)
+- [Scripts](##scripts)
+- [Estructura del Proyecto](##estructura-del-proyecto)
+- [Configuración](##configuración)
+- [Contribuciones](##contribuciones)
+- [Contacto](##contacto)
 
 ## **Instalación**
 
