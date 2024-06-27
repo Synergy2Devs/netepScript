@@ -4,12 +4,20 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 
 ## **Contenido** 📚
 
+- [Requisitos Previos](#requisitos-previos-⚙️) ⚙️
 - [Instalación](#instalación-⚙️) ⚙️
 - [Scripts](#scripts-📜) 📜
 - [Estructura del Proyecto](#estructura-del-proyecto-🏗️) 🏗️
 - [Configuración](#configuración-🔧) 🔧
 - [Contribuciones](#contribuciones-💡) 💡
 - [Contacto](#contacto-📬) 📬
+
+## **Requisitos previos** ⚙️
+
+- Un ordenador con Windows o Linux
+- Un editor de texto (opcional)
+- Git Bash o Windows Subsystem for Linux (WSL) (solo para Windows)
+- Permisos de administrador (opcional, para ejecutar el script con sudo)
 
 ## **Instalación** ⚙️
 
