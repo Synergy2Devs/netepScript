@@ -144,6 +144,7 @@ El archivo .prettierrc contiene la configuración de Prettier. Aquí tienes un e
 ```
 
 - _Nodemon_
+
   El archivo nodemon.json contiene la configuracion de Nodemon. Aquí tienes un ejemplo de configuración básica:
 
 ```json
