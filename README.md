@@ -27,7 +27,7 @@ bash netepScript.v0-8-9.sh
 
 ejemplo desde terminal de MacOs.
 
-## **Scripts** 📜
+**Scripts** 📜
 
 En este proyecto se han configurado varios scripts en el archivo package.json para facilitar el desarrollo y la producción:
 
@@ -37,7 +37,7 @@ En este proyecto se han configurado varios scripts en el archivo package.json pa
 - _npm run lint # Ejecuta ESLint para verificar la calidad del código._
 - _npm run format# Ejecuta Prettier para formatear el código._
 
-## **Estructura del Proyecto** 🏗️
+**Estructura del Proyecto** 🏗️
 
 - La estructura del proyecto es la siguiente:
 
