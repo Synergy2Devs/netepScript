@@ -1,17 +1,17 @@
-# **netepScript**
+# **netepScript** 🚀
 
 Este script instala Node, Express, TypeScript, ESLint y Prettier automáticamente. La idea de este script es ejecutar todas las instalaciones de dependencias y configuraciones de entorno con un solo comando, agilizando el inicio de proyectos desde cero.
 
-## **Contenido**
+## **Contenido** 📚
 
-- [Instalación](#instalación)
-- [Scripts](#scripts)
-- [Estructura del Proyecto](#estructura-del-proyecto)
-- [Configuración](#configuración)
-- [Contribuciones](#contribuciones)
-- [Contacto](#contacto)
+- [Instalación](#instalación) ⚙️
+- [Scripts](#scripts) 📜
+- [Estructura del Proyecto](#estructura-del-proyecto) 🏗️
+- [Configuración](#configuración) 🔧
+- [Contribuciones](#contribuciones) 💡
+- [Contacto](#contacto) 📬
 
-## **Instalación**
+## **Instalación** ⚙️
 
 Para empezar con este proyecto, descarga el archivo, descomprímelo dentro de una nueva carpeta y abre la carpeta con tu editor de texto de preferencia o la terminal nativa de tu sistema operativo.
 
@@ -25,7 +25,7 @@ Luego ejecuta el script.
 bash netepScript.v0-8-9.sh
 ```
 
-## **Scripts**
+## **Scripts** 📜
 
 En este proyecto se han configurado varios scripts en el archivo package.json para facilitar el desarrollo y la producción:
 
@@ -35,7 +35,7 @@ npm start # Inicia el servidor utilizando el código compilado.
 npm run lint # Ejecuta ESLint para verificar la calidad del código.
 npm run format# Ejecuta Prettier para formatear el código.
 
-## **Estructura del Proyecto**
+## **Estructura del Proyecto** 🏗️
 
 - La estructura del proyecto es la siguiente:
 
@@ -156,11 +156,11 @@ El archivo .prettierrc contiene la configuración de Prettier. Aquí tienes un e
 }
 ```
 
-## **Contribuciones**
+## **Contribuciones** 💡
 
 Las contribuciones son bienvenidas. Si tienes alguna sugerencia o mejora, abre un issue o un pull request para discutir cualquier cambio que te gustaría hacer.
 
-## **Sobre Nosotros**
+## **Sobre Nosotros** 🌍
 
 Somos un equipo de desarrolladores apasionados por la creación de soluciones innovadoras y robustas en el ámbito de la programación. Nos especializamos en el desarrollo de aplicaciones escalables y eficientes utilizando tecnologías modernas y buenas prácticas de ingeniería de software.
 
@@ -173,9 +173,12 @@ Somos un equipo de desarrolladores apasionados por la creación de soluciones in
 - **Nuestro Compromiso**
   Estamos comprometidos con la excelencia técnica y la mejora continua. Creemos en compartir nuestro conocimiento a través de código abierto y contribuciones a la comunidad, fortaleciendo así el ecosistema de desarrollo de software global.
 
-## **Contacto**
+## **Contacto** 📬
 
 Estamos abiertos a colaboraciones, oportunidades de desarrollo conjunto y discusiones sobre innovación tecnológica. No dudes en contactarnos para explorar cómo podemos trabajar juntos en tu próximo proyecto.
+
+- **_Synergy2Devs_**
+  synergy2devs@gmail.com
 
 - **_Marcelo Robin:_**
 
