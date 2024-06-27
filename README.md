@@ -4,14 +4,15 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 
 ## **Contenido** 📚
 
-- [Requisitos Previos](#requisitos-previos-⚙️) ⚙️
-- [Instalación](#instalación-⚙️) ⚙️
-- [Scripts](#scripts-📜) 📜
-- [Estructura del Proyecto](#estructura-del-proyecto-🏗️) 🏗️
-- [Configuración](#configuración-🔧) 🔧
-- [Contribuciones](#contribuciones-💡) 💡
-- [Contacto](#contacto-📬) 📬
+- [Requisitos Previos](#requisitos-previos) ⚙️
+- [Instalación](#instalacion) ⚙️
+- [Scripts](#scripts) 📜
+- [Estructura del Proyecto](#estructura-del-proyecto) 🏗️
+- [Configuración](#configuración) 🔧
+- [Contribuciones](#contribuciones) 💡
+- [Contacto](#contacto) 📬
 
+<a name="requisitos-previos"></a>
 ## **Requisitos previos** ⚙️
 
 - Un ordenador con Windows o Linux
@@ -19,6 +20,7 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 - Git Bash o Windows Subsystem for Linux (WSL) (solo para Windows)
 - Permisos de administrador (opcional, para ejecutar el script con sudo)
 
+<a name="instalacion"></a>
 ## **Instalación** ⚙️
 
 Para empezar con este proyecto, descarga el archivo, descomprímelo dentro de una nueva carpeta y abre la carpeta con tu editor de texto de preferencia o la terminal nativa de tu sistema operativo.
@@ -87,7 +89,7 @@ En este proyecto se han configurado varios scripts en el archivo package.json pa
 - package.json: Archivo de configuración de npm.
 - package-lock.json: Archivo de bloqueo de versiones de npm.
 - tsconfig.json: Configuración de TypeScript.
-- .gitignore: Archivo de configuracion de gitignore.
+- .gitignore: Archivo de configuración de gitignore.
 
 ## **Configuración** 🔧
 
