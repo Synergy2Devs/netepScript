@@ -4,12 +4,12 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 
 ## **Contenido** 📚
 
-- [Instalación](#instalación) ⚙️
-- [Scripts](#scripts) 📜
-- [Estructura del Proyecto](#estructura-del-proyecto) 🏗️
-- [Configuración](#configuración) 🔧
-- [Contribuciones](#contribuciones) 💡
-- [Contacto](#contacto) 📬
+- [Instalación](#instalación-⚙️) ⚙️
+- [Scripts](#scripts-📜) 📜
+- [Estructura del Proyecto](#estructura-del-proyecto-🏗️) 🏗️
+- [Configuración](#configuración-🔧) 🔧
+- [Contribuciones](#contribuciones-💡) 💡
+- [Contacto](#contacto-📬) 📬
 
 ## **Instalación** ⚙️
 
@@ -81,7 +81,7 @@ En este proyecto se han configurado varios scripts en el archivo package.json pa
 - tsconfig.json: Configuración de TypeScript.
 - .gitignore: Archivo de configuracion de gitignore.
 
-## **Configuración**
+## **Configuración** 🔧
 
 A continuación se describen las configuraciones más importantes del proyecto.
 
