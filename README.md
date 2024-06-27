@@ -25,7 +25,7 @@ Luego ejecuta el script.
 
 <!-- comando para ejecutar -->
 
-## **Scripts**
+**Scripts**
 
 En este proyecto se han configurado varios scripts en el archivo package.json para facilitar el desarrollo y la producción:
 
@@ -35,7 +35,7 @@ npm start # Inicia el servidor utilizando el código compilado.
 npm run lint # Ejecuta ESLint para verificar la calidad del código.
 npm run format# Ejecuta Prettier para formatear el código.
 
-## **Estructura del Proyecto**
+**Estructura del Proyecto**
 
 - La estructura del proyecto es la siguiente:
 
@@ -61,7 +61,7 @@ npm run format# Ejecuta Prettier para formatear el código.
 - utils: Funciones y utilidades.
 - index.ts: Archivo de entrada principal.
 
-# **Configuración**
+**Configuración**
 
 A continuación se describen las configuraciones más importantes del proyecto.
 
@@ -114,7 +114,7 @@ El archivo .prettierrc contiene la configuración de Prettier. Aquí tienes un e
   "tabWidth": 2
 } -->
 
-## **Contribuciones**
+**Contribuciones**
 
 Las contribuciones son bienvenidas. Si tienes alguna sugerencia o mejora, abre un issue o un pull request para discutir cualquier cambio que te gustaría hacer.
 
