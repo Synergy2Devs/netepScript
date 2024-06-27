@@ -4,12 +4,12 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 
 ## **Contenido**
 
-- [Instalación](##instalación)
-- [Scripts](##scripts)
-- [Estructura del Proyecto](##estructura-del-proyecto)
-- [Configuración](##configuración)
-- [Contribuciones](##contribuciones)
-- [Contacto](##contacto)
+- [Instalación](#instalación)
+- [Scripts](#scripts)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Configuración](#configuración)
+- [Contribuciones](#contribuciones)
+- [Contacto](#contacto)
 
 ## **Instalación**
 
@@ -69,7 +69,8 @@ A continuación se describen las configuraciones más importantes del proyecto.
 
 El archivo tsconfig.json contiene la configuración de TypeScript. Aquí tienes un ejemplo de configuración básica:
 
-<!-- {
+```
+{
   "compilerOptions": {
     "target": "ES6",
     "module": "commonjs",
@@ -78,13 +79,15 @@ El archivo tsconfig.json contiene la configuración de TypeScript. Aquí tienes 
     "strict": true,
     "esModuleInterop": true
   }
-} -->
+}
+```
 
 - _ESLint_
 
 El archivo .eslintrc.json contiene la configuración de ESLint. Aquí tienes un ejemplo de configuración básica:
 
-<!-- {
+```
+{
   "env": {
     "node": true,
     "es6": true
@@ -101,18 +104,21 @@ El archivo .eslintrc.json contiene la configuración de ESLint. Aquí tienes un 
     "quotes": ["error", "single"],
     "semi": ["error", "always"]
   }
-} -->
+}
+```
 
 - _Prettier_
 
 El archivo .prettierrc contiene la configuración de Prettier. Aquí tienes un ejemplo de configuración básica:
 
-<!-- {
+```
+{
   "singleQuote": true,
   "trailingComma": "all",
   "printWidth": 80,
   "tabWidth": 2
-} -->
+}
+```
 
 ## **Contribuciones**
 
