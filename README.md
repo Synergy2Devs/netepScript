@@ -180,7 +180,8 @@ Somos un equipo de desarrolladores apasionados por la creación de soluciones in
 Estamos abiertos a colaboraciones, oportunidades de desarrollo conjunto y discusiones sobre innovación tecnológica. No dudes en contactarnos para explorar cómo podemos trabajar juntos en tu próximo proyecto.
 
 - **_Synergy2Devs_**
-  synergy2devs@gmail.com
+
+  - synergy2devs@gmail.com
 
 - **_Marcelo Robin:_**
 
