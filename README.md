@@ -200,7 +200,7 @@ Las contribuciones son bienvenidas. Si tienes alguna sugerencia o mejora, abre u
 Somos un equipo de desarrolladores apasionados por la creación de soluciones innovadoras y robustas en el ámbito de la programación. Nos especializamos en el desarrollo de aplicaciones escalables y eficientes utilizando tecnologías modernas y buenas prácticas de ingeniería de software.
 
 - **Nuestra Misión**
-  Nuestra misión es impulsar el desarrollo de software de calidad, abordando desafíos técnicos con creatividad y compromiso. Buscamos no solo resolver problemas, sino también inspirar y colaborar con otros desarrolladores para construir un futuro digital más avanzado y accesible.
+  Impulsar el desarrollo de software de calidad, abordando desafíos técnicos con creatividad y compromiso. Buscamos no solo resolver problemas, sino también inspirar y colaborar con otros desarrolladores para construir un futuro digital más avanzado y accesible.
 
 - **Experiencia y Colaboración**
   Con una trayectoria combinada en proyectos diversos, desde aplicaciones web hasta soluciones empresariales, hemos adquirido experiencia en el diseño de arquitecturas sólidas y en la implementación de soluciones eficaces que cumplen con las necesidades del cliente.
