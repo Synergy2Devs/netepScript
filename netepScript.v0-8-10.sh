@@ -8,7 +8,7 @@ NEGRITA='\033[1m'
 NC='\033[0m' # No Color (para resetear)
 
 echo -e "${VERDE}=========================================================${NC}"
-echo -e "${AZUL}  ${NEGRITA}netepScript - V 0.8.9${NC}"
+echo -e "${AZUL}  ${NEGRITA}netepScript - V 0.8.10${NC}"
 echo -e "${AZUL}  Script de instalación para servidor Node.js${NC}"
 echo -e "${AMARILLO}  Incluye: Express.js, TypeScript, ESLint y Prettier${NC}"
 echo -e "${ROJO}${NEGRITA}  Autores: Marcelo Robin / Jesús García${NC}"
@@ -32,6 +32,14 @@ npm install -D morgan @types/morgan nodemon eslint@8.57.0 @typescript-eslint/esl
 echo -e "${AZUL}\n4) Generamos el tsconfig.json con las opciones por defecto${NC}"
 
 npx tsc --init
+
+sed -i '
+    # Descomentar rootDir
+    s/\/\/ *"rootDir": ".\/",/"rootDir": ".\/src",/
+
+    # Descomentar outDir
+    s/\/\/ *"outDir": ".\/",/"outDir": ".\/dist",/
+' tsconfig.json
 
 # Función para agregar líneas al final del archivo antes de la última llave
 add_lines_before_last_brace() {
@@ -82,6 +90,7 @@ EOF
 
 echo -e "${AZUL}\n6) Creamos el archivo .gitignore${NC}"
 
+touch ./.env
 cat <<EOF > .gitignore
 node_modules
 .env
@@ -93,10 +102,7 @@ echo -e "${AZUL}\n7) Creamos la estructura de carpetas del proyecto${NC}"
 mkdir -p src/{routes,controllers,config,interfaces,models,middlewares,services}
 touch src/config/envs.ts
 touch src/routes/indexRouter.ts
-touch src/routes/userRouter.ts
-touch src/routes/appointmentRouter.ts
 touch src/controllers/userRouter.ts
-touch src/controllers/appointmentRouter.ts
 
 echo -e "${AZUL}\n8) Agregamos los archivos index.ts y server.ts${NC}"
 
@@ -149,6 +155,9 @@ npx json -I -f package.json -e 'this.scripts.start="nodemon"'
 npx json -I -f package.json -e 'this.scripts.build="tsc"'
 npx json -I -f package.json -e 'this.scripts.lint="eslint . --ext .ts"'
 npx json -I -f package.json -e 'this.scripts["lint:fix"]="eslint . --ext .ts --fix"'
+
+PACKAGE_JSON="./package.json"
+sed -i 's/\^//g' "$PACKAGE_JSON"
 
 echo -e "${VERDE}=========================================================${NC}"
 echo -e "${ROJO}  ${NEGRITA}Seguinos en Github:${NC}"
