@@ -24,7 +24,7 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 <a name="instalacion"></a>
 ## **Instalación** ⚙️
 
-Para utilizar netepScript, primero crea una carpeta vacía donde alojarás tu proyecto. Descarga el archivo comprimido y descomprímelo dentro de esa carpeta. A continuación, abre la carpeta con tu editor de texto preferido o accede a ella desde la terminal de tu sistema operativo.
+Para utilizar netepScript, primero crea una carpeta vacía donde alojarás tu proyecto. Descarga el archivo comprimido y descomprímelo dentro de esa carpeta. A continuación, abre la carpeta con tu editor de texto preferido o accede a ella desde la terminal de tu sistema operativo. Después de instalar todas las dependencias, se puede eliminar el archivo del script para que no se incluya en el mismo.
 
 **En Windows 🪟**
 
