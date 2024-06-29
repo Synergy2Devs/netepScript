@@ -29,7 +29,24 @@ This script installs Node, Express, TypeScript, ESLint, and Prettier automatical
 <a name="installation"></a>
 ## **Installation** ⚙️
 
-To use netepScript, first create an empty folder where you will host your project. Download the compressed file and extract it into that folder. Then, open the folder with your preferred text editor or access it from your operating system's terminal. After installing all dependencies, you can remove the script file so that it is not included in the final project.
+There are two ways to install netepScript:
+
+### Option 1: Using npm (recommended)
+
+To install netepScript using npm, run the following command in your terminal:
+
+```bash
+npm install -g netepscript
+netepscript
+```
+Or without installing the library by running:
+
+```bash
+npx netepscript
+```
+### Option 2: Downloading the script and running it locally
+
+To use this installation system, first create an empty folder where you will host your project. Download the zip file and unzip it inside that folder. Then, open the folder with your preferred text editor or access it from your operating system's terminal. After all dependencies are installed, you can remove the script file so that it is not included in the script.
 
 **On Windows 🪟**
 
@@ -265,7 +282,24 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 <a name="instalacion"></a>
 ## **Instalación** ⚙️
 
-Para utilizar netepScript, primero crea una carpeta vacía donde alojarás tu proyecto. Descarga el archivo comprimido y descomprímelo dentro de esa carpeta. A continuación, abre la carpeta con tu editor de texto preferido o accede a ella desde la terminal de tu sistema operativo. Después de instalar todas las dependencias, se puede eliminar el archivo del script para que no se incluya en el mismo.
+Hay dos formas de instalar netepScript:
+
+### Opción 1: Usando npm (recomendado)
+
+Para instalar netepScript usando npm, ejecuta el siguiente comando en tu terminal:
+
+```bash
+npm install -g netepscript
+netepscript
+```
+O sin instalar la librería ejecutando:
+
+```bash
+npx netepscript
+```
+### Opción 2: Descargando el script y ejecutarlo localmente
+
+Para utilizar este sistema de instalación, primero crea una carpeta vacía donde alojarás tu proyecto. Descarga el archivo comprimido y descomprímelo dentro de esa carpeta. A continuación, abre la carpeta con tu editor de texto preferido o accede a ella desde la terminal de tu sistema operativo. Después de instalar todas las dependencias, se puede eliminar el archivo del script para que no se incluya en el mismo.
 
 **En Windows 🪟**
 
