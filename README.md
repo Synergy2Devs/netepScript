@@ -1,11 +1,4 @@
 <a name="inicio"></a>
-Elige un idioma para leer la documentación:
-
-<<<<<<< HEAD
-- [Documentación en Español](https://github.com/Synergy2Devs/netepScript/blob/main/docs/README.es.md) 🇪🇸
-- [Documentation in English](https://github.com/Synergy2Devs/netepScript/blob/main/docs/README.en.md) 🇬🇧
----
-=======
 - [Documentación en Español](#spanish) 🇪🇸
 - [Documentation in English](#english) 🇬🇧
 ---
