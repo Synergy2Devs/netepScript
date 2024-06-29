@@ -8,7 +8,7 @@ BOLD='\033[1m'
 NC='\033[0m' # No Color (for reset)
 
 echo -e "${GREEN}=========================================================${NC}"
-echo -e "${BLUE}  ${BOLD}netepScript - V 0.9.01${NC}"
+echo -e "${BLUE}  ${BOLD}netepScript${NC}"
 echo -e "${BLUE}  Installation script for Node.js server${NC}"
 echo -e "${YELLOW}  Including: Express.js, TypeScript, ESLint, and Prettier${NC}"
 echo -e "${RED}${BOLD}  Author: Synergy2Devs${NC}"
