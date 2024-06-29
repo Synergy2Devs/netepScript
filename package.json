@@ -1,6 +1,6 @@
 {
   "name": "netepscript",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "<a name=\"inicio\"></a>\r # **netepScript** 🚀",
   "main": "index.js",
   "bin": {
