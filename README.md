@@ -515,4 +515,3 @@ Estamos listos para escuchar tus ideas y explorar cómo podemos trabajar juntos 
   - [Linkedin](https://www.linkedin.com/in/jesusjagarcia/)
 
 [Ir arriba de todo ↑](#inicio)
->>>>>>> 84e3c49 (.)
