@@ -11,7 +11,17 @@
     "release": "npm version patch && git push origin main --tags",
     "start": "./netepscript.sh"
   },
-  "keywords": [],
+  "keywords": [
+    "node",
+    "express",
+    "typescript",
+    "eslint",
+    "prettier",
+    "setup",
+    "automation",
+    "project-initialization",
+    "development-tools"
+  ],
   "author": "Synergy2Devs",
   "license": "ISC"
 }
