@@ -3,14 +3,14 @@ name: Publish to NPM
 on:
   push:
     branches:
-      - main # Puedes cambiar esto a la rama que prefieras
+      - main
 
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16, 18, 20] # Lista de versiones de Node.js que quieres probar
+        node-version: [16, 18, 20]
 
     steps:
       - name: Checkout repository
@@ -22,7 +22,16 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: npm install # Instala todas las dependencias listadas en package.json
+        run: npm install
+
+      - name: Display NPM Version
+        run: npm -v
+
+      - name: Display Node Version
+        run: node -v
+
+      - name: Display Installed Packages
+        run: npm list
 
       - name: Increment version
         run: npm version patch
@@ -30,7 +39,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to NPM
-        if: matrix.node-version == '18' # Solo publica desde una versión específica de Node.js
+        if: matrix.node-version == '18'
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
