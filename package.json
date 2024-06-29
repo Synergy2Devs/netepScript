@@ -1,7 +1,7 @@
 {
   "name": "netepscript",
   "version": "0.9.5",
-  "description": "<a name=\"inicio\"></a>\r # **netepScript** 🚀",
+  "description": "Automatiza la configuración inicial de proyectos Node.js con Express, TypeScript, ESLint y Prettier",
   "main": "index.js",
   "bin": {
     "netepScript": "./netepScript.v0-9-4.sh"
