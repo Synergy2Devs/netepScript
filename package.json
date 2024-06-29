@@ -1,0 +1,15 @@
+{
+  "name": "netepscript",
+  "version": "0.9.03",
+  "description": "<a name=\"inicio\"></a>\r # **netepScript** 🚀",
+  "main": "index.js",
+  "bin": {
+    "netepScript": "./netepScript.v0-9-03.sh"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Synergy2Devs",
+  "license": "ISC"
+}
