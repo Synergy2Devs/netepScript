@@ -149,6 +149,7 @@ EOF
 # We set up the scripts in package.json
 echo -e "${YELLOW}\n11) We set up the scripts in package.json${NC}"
 
+npx json -I -f package.json -e 'this.main="./dist/index.js"'
 npx json -I -f package.json -e 'this.scripts.start="nodemon"'
 npx json -I -f package.json -e 'this.scripts.build="tsc"'
 npx json -I -f package.json -e 'this.scripts.lint="eslint . --ext .ts"'
