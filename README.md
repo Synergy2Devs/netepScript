@@ -15,7 +15,6 @@ This script installs Node, Express, TypeScript, ESLint, and Prettier automatical
 - [Project Structure](#project-structure) 🏗️
 - [Configuration](#configuration) 🔧
 - [Contributions](#contributions) 💡
-- [License](#license) 📄
 - [Contact](#contact) 📬
 
 <a name="prerequisites"></a>
@@ -224,17 +223,6 @@ Contributions are welcome. If you have any suggestions or improvements, open an 
 - **Our Commitment**
   * We are committed to technical excellence and continuous improvement. We believe in sharing our knowledge through open-source contributions, thus strengthening the global software development ecosystem.
 
-  <a name="license"></a>
-## **License** 📄
-
-ISC License
-
-Copyright (c) 2024 Synergy2Devs
-
-Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-
 <a name="contact"></a>
 ## **Contact** 📬
 
@@ -268,7 +256,6 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 - [Estructura del Proyecto](#estructura-del-proyecto) 🏗️
 - [Configuración](#configuración) 🔧
 - [Contribuciones](#contribuciones) 💡
-- [Licencia](#licencia) 📄
 - [Contacto](#contacto) 📬
 
 <a name="requisitos-previos"></a>
@@ -484,17 +471,6 @@ Somos un equipo de desarrolladores apasionados por la creación de soluciones in
 
 - **Nuestro Compromiso**
   * Estamos comprometidos con la excelencia técnica y la mejora continua. Creemos en compartir nuestro conocimiento a través de código abierto y contribuciones a la comunidad, fortaleciendo así el ecosistema de desarrollo de software global.
-
-<a name="licencia"></a>
-## **Licencia** 📄
-
-Licencia ISC
-
-Copyright (c) 2024 Synergy2Devs
-
-Se concede permiso para usar, copiar, modificar y/o distribuir este software para cualquier propósito, con o sin cargo, siempre que el aviso de copyright anterior y este aviso de permiso aparezcan en todas las copias.
-
-EL SOFTWARE SE PROPORCIONA "TAL CUAL" Y EL AUTOR RENUNCIA A TODAS LAS GARANTÍAS CON RESPECTO A ESTE SOFTWARE, INCLUYENDO TODAS LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD Y ADECUACIÓN. EN NINGÚN CASO EL AUTOR SERÁ RESPONSABLE POR CUALQUIER DAÑO ESPECIAL, DIRECTO, INDIRECTO O CONSECUENTE, O POR CUALQUIER DAÑO QUE RESULTE DE LA PÉRDIDA DE USO, DATOS O BENEFICIOS, YA SEA EN UNA ACCIÓN DE CONTRATO, NEGLIGENCIA U OTRA ACCIÓN TORTICERA, QUE SURJA DE O EN CONEXIÓN CON EL USO O RENDIMIENTO DE ESTE SOFTWARE.
 
 <a name="contacto"></a>
 ## **Contacto** 📬
