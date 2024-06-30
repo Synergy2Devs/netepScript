@@ -162,26 +162,26 @@ echo "3) MongoDB with Mongoose"
 echo "4) No database engine"
 read -p "Enter your choice (1-4): " db_choice
 
-case $db_choice in
-    1)
+case "$db_choice" in
+    "1")
         echo "Installing PostgreSQL and Sequelize dependencies..."
         npm install pg sequelize
         npm install -D @types/pg @types/sequelize
         echo -e "\n# PostgreSQL Configuration\nDB_HOST=localhost\nDB_PORT=5432\nDB_NAME=your_database\nDB_USER=your_username\nDB_PASSWORD=your_password" >> .env
         ;;
-    2)
+    "2")
         echo "Installing MySQL and Sequelize dependencies..."
         npm install mysql2 sequelize
         npm install -D @types/mysql @types/sequelize
         echo -e "\n# MySQL Configuration\nDB_HOST=localhost\nDB_PORT=3306\nDB_NAME=your_database\nDB_USER=your_username\nDB_PASSWORD=your_password" >> .env
         ;;
-    3)
+    "3")
         echo "Installing MongoDB and Mongoose dependencies..."
         npm install mongodb mongoose
         npm install -D @types/mongodb @types/mongoose
         echo -e "\n# MongoDB Configuration\nMONGO_URI=mongodb://localhost:27017/your_database" >> .env
         ;;
-    4)
+    "4")
         echo "No database dependencies installed."
         ;;
     *)
