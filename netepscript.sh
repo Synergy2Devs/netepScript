@@ -24,7 +24,7 @@ fi
 
 echo -e "${YELLOW}\n2) We installed dependencies${NC}"
 
-npm install express dotenv
+npm install express dotenv typeorm reflect-metadata pg
 
 echo -e "${YELLOW}\n3) We installed development dependencies${NC}"
 
@@ -37,6 +37,10 @@ npx tsc --init
 sed -i.bak '
     s/\/\/ *"rootDir": *".\/"/"rootDir": "\.\/src"/g
     s/\/\/ *"outDir": *".\/"/"outDir": "\.\/dist"/g
+    s/\/\/ *"emitDecoratorMetadata": *true,/"emitDecoratorMetadata": true,/g
+    s/\/\/ *"experimentalDecorators": *true,/"experimentalDecorators": true,/g
+    s/\/\/ *"lib": *\[\],/"lib": ["ES6"],/g
+    s/\/\/ *"strictPropertyInitialization": *true,/"strictPropertyInitialization": false,/g
 ' tsconfig.json && rm tsconfig.json.bak
 
 # Function to add lines to the end of the file before the last curly brace
@@ -112,8 +116,8 @@ echo -e "${YELLOW}\n9) We added the .prettierrc file with its configuration${NC}
 touch ./.prettierrc
 cat << EOF > .prettierrc
 {
-  "singleQuote": true,
-  "trailingComma": "all",
+  "singleQuote": false,
+  "trailingComma": "none",
   "semi": true,
   "tabWidth": 2,
   "bracketSpacing": true,
