@@ -151,7 +151,7 @@ module.exports = {
 };
 EOF
 
-echo -e "${YELLOW}\n11) data-source.ts configured ${NC}"
+echo -e "${YELLOW}\n11) We configured data-source.ts  ${NC}"
 
 cat << EOF > src/config/data-source.ts
 import { DataSource } from "typeorm";
