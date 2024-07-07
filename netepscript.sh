@@ -118,7 +118,7 @@ touch ./.prettierrc
 cat << EOF > .prettierrc
 {
   "singleQuote": false,
-  "trailingComma": "none",
+  "trailingComma": "all",
   "semi": true,
   "tabWidth": 2,
   "bracketSpacing": true,
