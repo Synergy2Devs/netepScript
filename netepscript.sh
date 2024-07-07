@@ -117,7 +117,7 @@ echo -e "${YELLOW}\n9) We added the .prettierrc file with its configuration${NC}
 touch ./.prettierrc
 cat << EOF > .prettierrc
 {
-  "singleQuote": false,
+  "singleQuote": true,
   "trailingComma": "all",
   "semi": true,
   "tabWidth": 2,
@@ -154,18 +154,18 @@ EOF
 echo -e "${YELLOW}\n11) We configured data-source.ts  ${NC}"
 
 cat << EOF > src/config/data-source.ts
-import { DataSource } from "typeorm";
+import { DataSource } from 'typeorm';
 
 export const AppDataSource = new DataSource({
-  type: "postgres",
-  host: "localhost",
+  type: 'postgres',
+  host: 'localhost',
   port: 5432,
-  username: "postgres",
-  password: "postgres",
-  database: "new_database", //This database must be created before initialize the typeorm
-  //dropSchema: true, //Erase database content when the server starts
+  username: 'postgres',
+  password: 'postgres',
+  database: 'new_database', //This database must be created before initialize the typeorm
+  dropSchema: false, //Erase database content when the server starts
   synchronize: true,
-  // logging: true, // Don't log queries in the console
+  logging: false, // Don't log queries in the console
   entities: [],
   subscribers: [],
   migrations: [],
