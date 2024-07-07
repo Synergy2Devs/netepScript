@@ -34,6 +34,7 @@ echo -e "${YELLOW}\n4) We generated the tsconfig.json with default options${NC}"
 
 npx tsc --init
 
+#Typescript config file modification
 sed -i.bak '
     s/\/\/ *"rootDir": *".\/"/"rootDir": "\.\/src"/g
     s/\/\/ *"outDir": *".\/"/"outDir": "\.\/dist"/g
@@ -150,8 +151,29 @@ module.exports = {
 };
 EOF
 
+echo -e "${YELLOW}\n11) data-source.ts configured ${NC}"
+
+cat << EOF > src/config/data-source.ts
+import { DataSource } from "typeorm";
+
+export const AppDataSource = new DataSource({
+  type: "postgres",
+  host: "localhost",
+  port: 5432,
+  username: "postgres",
+  password: "postgres",
+  database: "new_database", //This database must be created before initialize the typeorm
+  //dropSchema: true, //Erase database content when the server starts
+  synchronize: true,
+  // logging: true, // Don't log queries in the console
+  entities: [],
+  subscribers: [],
+  migrations: [],
+});
+EOF
+
 # We set up the scripts in package.json
-echo -e "${YELLOW}\n11) We set up the scripts in package.json${NC}"
+echo -e "${YELLOW}\n12) We set up the scripts in package.json${NC}"
 
 npx json -I -f package.json -e 'this.main="./dist/index.js"'
 npx json -I -f package.json -e 'this.scripts.start="nodemon"'
