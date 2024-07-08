@@ -24,7 +24,7 @@ fi
 
 echo -e "${YELLOW}\n2) We installed dependencies${NC}"
 
-npm install express dotenv typeorm reflect-metadata pg
+npm install express dotenv
 
 echo -e "${YELLOW}\n3) We installed development dependencies${NC}"
 
@@ -38,10 +38,6 @@ npx tsc --init
 sed -i.bak '
     s/\/\/ *"rootDir": *".\/"/"rootDir": "\.\/src"/g
     s/\/\/ *"outDir": *".\/"/"outDir": "\.\/dist"/g
-    s/\/\/ *"emitDecoratorMetadata": *true,/"emitDecoratorMetadata": true,/g
-    s/\/\/ *"experimentalDecorators": *true,/"experimentalDecorators": true,/g
-    s/\/\/ *"lib": *\[\],/"lib": ["ES6"],/g
-    s/\/\/ *"strictPropertyInitialization": *true,/"strictPropertyInitialization": false,/g
 ' tsconfig.json && rm tsconfig.json.bak
 
 # Function to add lines to the end of the file before the last curly brace
@@ -151,35 +147,54 @@ module.exports = {
 };
 EOF
 
-echo -e "${YELLOW}\n11) We configured data-source.ts  ${NC}"
-
-cat << EOF > src/config/data-source.ts
-import { DataSource } from 'typeorm';
-
-export const AppDataSource = new DataSource({
-  type: 'postgres',
-  host: 'localhost',
-  port: 5432,
-  username: 'postgres',
-  password: 'postgres',
-  database: 'new_database', //This database must be created before initialize the typeorm
-  dropSchema: false, //Erase database content when the server starts
-  synchronize: true,
-  logging: false, // Don't log queries in the console
-  entities: [],
-  subscribers: [],
-  migrations: [],
-});
-EOF
 
 # We set up the scripts in package.json
-echo -e "${YELLOW}\n12) We set up the scripts in package.json${NC}"
+echo -e "${YELLOW}\n11) We set up the scripts in package.json${NC}"
 
 npx json -I -f package.json -e 'this.main="./dist/index.js"'
 npx json -I -f package.json -e 'this.scripts.start="nodemon"'
 npx json -I -f package.json -e 'this.scripts.build="tsc"'
 npx json -I -f package.json -e 'this.scripts.lint="eslint . --ext .ts"'
 npx json -I -f package.json -e 'this.scripts["lint:fix"]="eslint . --ext .ts --fix"'
+
+echo -e "${YELLOW}\n12) Choose your database engine:${NC}"
+echo "1) PostgreSQL with Sequelize"
+echo "2) MySQL with Sequelize"
+echo "3) MongoDB with Mongoose"
+echo "4) typeORM with postgres"
+echo "5) No database engine"
+read -p "Enter your choice (1-5): " db_choice
+
+case "$db_choice" in
+    "1")
+        echo "Installing PostgreSQL and Sequelize dependencies..."
+        npm install pg sequelize
+        npm install -D @types/pg @types/sequelize
+        echo -e "\n# PostgreSQL Configuration\nDB_HOST=localhost\nDB_PORT=5432\nDB_NAME=your_database\nDB_USER=your_username\nDB_PASSWORD=your_password" >> .env
+        ;;
+    "2")
+        echo "Installing MySQL and Sequelize dependencies..."
+        npm install mysql2 sequelize
+        npm install -D @types/mysql @types/sequelize
+        echo -e "\n# MySQL Configuration\nDB_HOST=localhost\nDB_PORT=3306\nDB_NAME=your_database\nDB_USER=your_username\nDB_PASSWORD=your_password" >> .env
+        ;;
+    "3")
+        echo "Installing MongoDB and Mongoose dependencies..."
+        npm install mongodb mongoose
+        npm install -D @types/mongodb @types/mongoose
+        echo -e "\n# MongoDB Configuration\nMONGO_URI=mongodb://localhost:27017/your_database" >> .env
+        ;;
+    "4")
+        echo
+        bash typeOrm.sh
+        ;;
+    "5")
+        echo "No database dependencies installed."
+        ;;
+    *)
+        echo "Invalid choice. No database dependencies installed."
+        ;;
+esac
 
 PACKAGE_JSON="./package.json"
 sed -i 's/\^//g' "$PACKAGE_JSON"
