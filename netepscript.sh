@@ -185,7 +185,7 @@ case "$db_choice" in
         echo -e "\n# MongoDB Configuration\nMONGO_URI=mongodb://localhost:27017/your_database" >> .env
         ;;
     "4")
-        echo
+        echo "Installing typeORM dependencies..."
         bash typeOrm.sh
         ;;
     "5")
@@ -197,7 +197,11 @@ case "$db_choice" in
 esac
 
 PACKAGE_JSON="./package.json"
-sed -i 's/\^//g' "$PACKAGE_JSON"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  sed -i '' 's/\^//g' "$PACKAGE_JSON"
+else
+  sed -i 's/\^//g' "$PACKAGE_JSON"
+fi
 
 echo -e "${GREEN}=========================================================${NC}"
 echo -e "${RED}  ${BOLD}Follow us on GitHub:${NC}"
