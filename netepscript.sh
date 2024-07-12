@@ -7,8 +7,10 @@ RED='\033[0;31m'
 BOLD='\033[1m'
 NC='\033[0m' # No Color (for reset)
 
+VERSION=$(jq -r .version package.json)
+
 echo -e "${GREEN}=========================================================${NC}"
-echo -e "${BLUE}  ${BOLD}netepScript${NC}"
+echo -e "${BLUE}  ${BOLD}netepScript v${VERSION}${NC}"
 echo -e "${BLUE}  Installation script for Node.js server${NC}"
 echo -e "${YELLOW}  Including: Express.js, TypeScript, ESLint, and Prettier${NC}"
 echo -e "${RED}${BOLD}  Author: Synergy2Devs${NC}"
