@@ -1,4 +1,3 @@
-echo "Installing TypeORM dependencies..."
 npm install typeorm reflect-metadata pg
 
 
