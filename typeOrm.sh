@@ -1,7 +1,5 @@
 npm install typeorm reflect-metadata pg
 
-
-#Typescript config file modification
 sed -i.bak '
     s/\/\/ *"emitDecoratorMetadata": *true,/"emitDecoratorMetadata": true,/g
     s/\/\/ *"experimentalDecorators": *true,/"experimentalDecorators": true,/g

@@ -159,9 +159,9 @@ npx json -I -f package.json -e 'this.scripts["lint:fix"]="eslint . --ext .ts --f
 
 echo -e "${YELLOW}\n12) Choose your database engine:${NC}"
 echo "1) PostgreSQL with Sequelize"
-echo "2) MySQL with Sequelize"
-echo "3) MongoDB with Mongoose"
-echo "4) typeORM with postgres"
+echo "2) PostgreSQL with typeORM"
+echo "3) MySQL with Sequelize"
+echo "4) MongoDB with Mongoose"
 echo "5) No database engine"
 read -p "Enter your choice (1-5): " db_choice
 
@@ -172,21 +172,48 @@ case "$db_choice" in
         npm install -D @types/pg @types/sequelize
         echo -e "\n# PostgreSQL Configuration\nDB_HOST=localhost\nDB_PORT=5432\nDB_NAME=your_database\nDB_USER=your_username\nDB_PASSWORD=your_password" >> .env
         ;;
-    "2")
+    "3")
         echo "Installing MySQL and Sequelize dependencies..."
         npm install mysql2 sequelize
         npm install -D @types/mysql @types/sequelize
         echo -e "\n# MySQL Configuration\nDB_HOST=localhost\nDB_PORT=3306\nDB_NAME=your_database\nDB_USER=your_username\nDB_PASSWORD=your_password" >> .env
         ;;
-    "3")
+    "4")
         echo "Installing MongoDB and Mongoose dependencies..."
         npm install mongodb mongoose
         npm install -D @types/mongodb @types/mongoose
         echo -e "\n# MongoDB Configuration\nMONGO_URI=mongodb://localhost:27017/your_database" >> .env
         ;;
-    "4")
-        echo "Installing typeORM dependencies..."
-        bash typeOrm.sh
+    "2")
+        echo "Installing PostgreSQL and typeORM dependencies..."
+        npm install typeorm reflect-metadata pg
+
+sed -i.bak '
+    s/\/\/ *"emitDecoratorMetadata": *true,/"emitDecoratorMetadata": true,/g
+    s/\/\/ *"experimentalDecorators": *true,/"experimentalDecorators": true,/g
+    s/\/\/ *"lib": *\[\],/"lib": ["ES6"],/g
+    s/\/\/ *"strictPropertyInitialization": *true,/"strictPropertyInitialization": false,/g
+' tsconfig.json && rm tsconfig.json.bak
+
+
+cat << EOF > src/config/data-source.ts
+import { DataSource } from 'typeorm';
+
+export const AppDataSource = new DataSource({
+  type: 'postgres',
+  host: 'localhost',
+  port: 5432,
+  username: 'postgres',
+  password: 'postgres',
+  database: 'new_database', //This database must be created before initialize the typeorm
+  dropSchema: false, //Erase database content when the server starts
+  synchronize: true,
+  logging: false, // Don't log queries in the console
+  entities: [],
+  subscribers: [],
+  migrations: [],
+});
+EOF
         ;;
     "5")
         echo "No database dependencies installed."
