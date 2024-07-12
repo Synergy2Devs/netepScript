@@ -1,6 +1,6 @@
 {
   "name": "netepscript",
-  "version": "0.10.4",
+  "version": "0.10.5",
   "description": "Automate initial setup of Node.js projects with Express, TypeScript, ESLint, and Prettier",
   "main": "index.js",
   "bin": {
