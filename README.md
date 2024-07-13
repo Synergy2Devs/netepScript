@@ -13,6 +13,7 @@ This script installs Node, Express, TypeScript, ESLint, and Prettier automatical
 - [Installation](#installation) ⚙️
 - [Scripts](#scripts) 📜
 - [Project Structure](#project-structure) 🏗️
+- [Database Configuration](#database-configuration) 🗄️
 - [Configuration](#configuration) 🔧
 - [Contributions](#contributions) 💡
 - [Contact](#contact) 📬
@@ -134,6 +135,59 @@ Several scripts have been configured in the package.json file in this project to
 - .env: Environment variables.
 - .gitignore: gitignore configuration file.
 
+<a name="database-configuration"></a>
+## **Database Configuration** 🗄️
+During the execution of the script, you will be prompted to choose the database configuration. Here are the available options:
+- PostgreSQL with Sequelize
+- PostgreSQL with TypeORM
+- MySQL with Sequelize
+- MongoDB with Mongoose
+- No database engine
+Depending on your choice, the corresponding dependencies will be installed, and the necessary environment variables will be configured.
+- Configuration Example
+If you choose PostgreSQL with Sequelize, the pg and sequelize dependencies will be installed, and the following configuration will be added to your .env file:
+```makefile
+ #PostgreSQL Configuration
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=your_database
+DB_USER=your_username
+DB_PASSWORD=your_password
+```
+For MongoDB with Mongoose, the added configuration will be:
+```bash
+# MongoDB Configuration
+MONGO_URI=mongodb://localhost:27017/your_database
+```
+For PostgreSQL with TypeORM, in addition to installing the dependencies, the tsconfig.json file will be updated, and the src/config/data-source.ts file will be created with the basic TypeORM configuration:
+
+`src/config/data-source.ts`
+```typescrypt
+import { DataSource } from "typeorm";
+
+export const AppDataSource = new DataSource({
+  type: "postgres",
+  host: process.env.DB_HOST,
+  port: Number(process.env.DB_PORT),
+  username: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  synchronize: true,
+  logging: false,
+  entities: ["src/entity/**/*.ts"],
+  migrations: ["src/migration/**/*.ts"],
+  subscribers: ["src/subscriber/**/*.ts"],
+});
+
+AppDataSource.initialize()
+  .then(() => {
+    console.log("Data Source has been initialized!");
+  })
+  .catch((err) => {
+    console.error("Error during Data Source initialization:", err);
+  });
+```
+
 <a name="configuration"></a>
 ## **Configuration ** 🔧
 
@@ -254,6 +308,7 @@ Este script instala Node, Express, TypeScript, ESLint y Prettier automáticament
 - [Instalación](#instalacion) ⚙️
 - [Scripts](#scripts) 📜
 - [Estructura del Proyecto](#estructura-del-proyecto) 🏗️
+- [Configuración de Base de Datos](#configuracion-de-base-de-datos) 🗄️
 - [Configuración](#configuración) 🔧
 - [Contribuciones](#contribuciones) 💡
 - [Contacto](#contacto) 📬
@@ -376,6 +431,63 @@ En este proyecto se han configurado varios scripts en el archivo package.json pa
 - .env: Variables de entorno.
 - .gitignore: Archivo de configuración de gitignore.
 
+<a name="configuracion-de-base-de-datos"></a>
+## **Configuración de Bases de Datos** 🗄️
+
+Durante la ejecución del script, se te pedirá que elijas la configuración de base de datos. Aquí tienes las opciones disponibles:
+
+- PostgreSQL con Sequelize
+- PostgreSQL con TypeORM
+- MySQL con Sequelize
+- MongoDB con Mongoose
+- Sin motor de base de datos
+
+Dependiendo de tu elección, se instalarán las dependencias correspondientes y se configurarán las variables de entorno necesarias.
+
+- _Ejemplo de Configuración_
+  Si eliges PostgreSQL con Sequelize, las dependencias pg y sequelize se instalarán, y se añadirá la siguiente configuración a tu archivo .env:
+```makefile
+ #PostgreSQL Configuration
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=your_database
+DB_USER=your_username
+DB_PASSWORD=your_password
+```
+Para MongoDB con Mongoose, la configuración añadida será:
+```bash
+# MongoDB Configuration
+MONGO_URI=mongodb://localhost:27017/your_database
+```
+Para PostgreSQL con TypeORM, además de instalar las dependencias, se actualizará el archivo tsconfig.json y se creará el archivo src/config/data-source.ts con la configuración básica de TypeORM:
+
+`src/config/data-source.ts`
+```typescript
+import { DataSource } from "typeorm";
+
+export const AppDataSource = new DataSource({
+  type: "postgres",
+  host: process.env.DB_HOST,
+  port: Number(process.env.DB_PORT),
+  username: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  synchronize: true,
+  logging: false,
+  entities: ["src/entity/**/*.ts"],
+  migrations: ["src/migration/**/*.ts"],
+  subscribers: ["src/subscriber/**/*.ts"],
+});
+
+AppDataSource.initialize()
+  .then(() => {
+    console.log("Data Source has been initialized!");
+  })
+  .catch((err) => {
+    console.error("Error during Data Source initialization:", err);
+  });
+```
+
 <a name="configuracion"></a>
 ## **Configuración** 🔧
 
@@ -479,7 +591,7 @@ Estamos listos para escuchar tus ideas y explorar cómo podemos trabajar juntos 
 
 
 - **Synergy2Devs**
-  - <a href="mailto:synergy2devs@gmail.com">Escríbenos un email 📧</a>
+  - <a href="mailto:info@synergy2devs.com">Escríbenos un email 📧</a>
   - [Nuestro GitHub](https://github.com/Synergy2Devs)
 
 - **Marcelo Robin**
