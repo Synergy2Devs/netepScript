@@ -154,12 +154,12 @@ DB_NAME=your_database
 DB_USER=your_username
 DB_PASSWORD=your_password
 ```
-For MongoDB with Mongoose, the added configuration will be:
+- For MongoDB with Mongoose, the added configuration will be:
 ```bash
 # MongoDB Configuration
 MONGO_URI=mongodb://localhost:27017/your_database
 ```
-For PostgreSQL with TypeORM, in addition to installing the dependencies, the tsconfig.json file will be updated, and the src/config/data-source.ts file will be created with the basic TypeORM configuration:
+- For PostgreSQL with TypeORM, in addition to installing the dependencies, the tsconfig.json file will be updated, and the src/config/data-source.ts file will be created with the basic TypeORM configuration:
 
 `src/config/data-source.ts`
 ```typescrypt
@@ -454,12 +454,12 @@ DB_NAME=your_database
 DB_USER=your_username
 DB_PASSWORD=your_password
 ```
-Para MongoDB con Mongoose, la configuración añadida será:
+- Para MongoDB con Mongoose, la configuración añadida será:
 ```bash
 # MongoDB Configuration
 MONGO_URI=mongodb://localhost:27017/your_database
 ```
-Para PostgreSQL con TypeORM, además de instalar las dependencias, se actualizará el archivo tsconfig.json y se creará el archivo src/config/data-source.ts con la configuración básica de TypeORM:
+- Para PostgreSQL con TypeORM, además de instalar las dependencias, se actualizará el archivo tsconfig.json y se creará el archivo src/config/data-source.ts con la configuración básica de TypeORM:
 
 `src/config/data-source.ts`
 ```typescript
