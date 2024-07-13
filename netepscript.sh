@@ -14,7 +14,7 @@ get_npm_version() {
 
 # Función para obtener la versión de GitHub
 get_github_version() {
-    curl -s https://raw.githubusercontent.com/Synergy2Dev/netepScript/main/package.json | grep -oP '"version": "\K[^"]+'
+    curl -s https://github.com/Synergy2Devs/netepScript/blob/main/package.json | grep -oP '"version": "\K[^"]+'
 }
 
 # Intenta obtener la versión de npm
