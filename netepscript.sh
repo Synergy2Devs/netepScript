@@ -7,13 +7,7 @@ RED='\033[0;31m'
 BOLD='\033[1m'
 NC='\033[0m'
 
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-PACKAGE_JSON="$SCRIPT_DIR/package.json"
-if [ ! -f "$PACKAGE_JSON" ]; then
-  echo -e "${RED}Error: package.json not found in $PACKAGE_JSON${NC}"
-  exit 1
-fi
-VERSION=$(jq -r .version "$PACKAGE_JSON")
+VERSION=$(npm list netepscript -g --depth=0 2>/dev/null | grep netepscript | cut -d@ -f2)
 
 echo -e "${GREEN}=========================================================${NC}"
 echo -e "${BLUE}  ${BOLD}netepScript v${VERSION}${NC}"
