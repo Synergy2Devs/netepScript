@@ -7,29 +7,8 @@ RED='\033[0;31m'
 BOLD='\033[1m'
 NC='\033[0m'
 
-# Función para obtener la versión de npm
-get_npm_version() {
-    npm view netepscript version 2>/dev/null
-}
-
-# Función para obtener la versión de GitHub
-get_github_version() {
-    curl -s https://github.com/Synergy2Devs/netepScript/blob/main/package.json | grep -oP '"version": "\K[^"]+'
-}
-
 # Intenta obtener la versión de npm
-VERSION=$(get_npm_version)
-
-# Si no se puede obtener de npm, intenta obtenerla de GitHub
-if [ -z "$VERSION" ]; then
-    VERSION=$(get_github_version)
-fi
-
-
-if [ -z "$VERSION" ]; then
-    VERSION="desconocida"
-    echo -e "${YELLOW}Advertencia: No se pudo determinar la versión de netepscript${NC}"
-fi
+VERSION=$(npm view netepscript version 2>/dev/null)
 
 echo -e "${GREEN}=========================================================${NC}"
 echo -e "${BLUE}  ${BOLD}netepScript v${VERSION}${NC}"
