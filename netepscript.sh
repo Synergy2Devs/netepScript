@@ -5,9 +5,15 @@ BLUE='\033[0;34m'
 YELLOW='\033[1;33m'
 RED='\033[0;31m'
 BOLD='\033[1m'
-NC='\033[0m' # No Color (for reset)
+NC='\033[0m'
 
-VERSION=$(jq -r .version package.json)
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+PACKAGE_JSON="$SCRIPT_DIR/package.json"
+if [ ! -f "$PACKAGE_JSON" ]; then
+  echo -e "${RED}Error: package.json not found in $PACKAGE_JSON${NC}"
+  exit 1
+fi
+VERSION=$(jq -r .version "$PACKAGE_JSON")
 
 echo -e "${GREEN}=========================================================${NC}"
 echo -e "${BLUE}  ${BOLD}netepScript v${VERSION}${NC}"
